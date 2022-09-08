@@ -1,0 +1,14 @@
+button{
+    border: outset;
+}
+
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: #1a62ab;
+}
+.w3-padding-64 {
+    height: 20px;;
+    padding-top: -2px!important;
+    padding-bottom: 2px!important;
+}

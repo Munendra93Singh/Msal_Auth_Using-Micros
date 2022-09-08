@@ -1,0 +1,62 @@
+<div class="card; container">
+    <div class="container mt-4">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-7 mt-4">
+          <div>       
+            <div *ngIf="prfilename">
+              <div class="card mt-4 ">
+                <div class="text-center" style="margin-top:-50px">
+                  <img  [src]="profilePic"  width="100"  class="rounded-circle"/>
+                </div>
+                <table class="table table-borderless text-center">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="d-flex flex-column">
+                          <span class="text-left head badge bg-secondary">FULL NAME</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-column">
+                          <span class="text-left head" ><h5>{{ prfilename.displayName }}</h5></span >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex flex-column">
+                          <span class="text-left head badge bg-secondary">EMAIL</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-column">
+                          <span class="text-left head"><h5>{{ prfilename.mail }}</h5></span >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex flex-column badge bg-secondary">
+                          <span class="text-left head">NAME</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex flex-column">
+                          <span class="text-left head "><h5>{{ prfilename.surname }}</h5></span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  

@@ -1,0 +1,20 @@
+  <nav class="navbar  navbar-dark bg-info sticky-top">
+    <a class="navbar-brand" style="padding-left: 50px;" routerLink="/"><strong><i class="fa fa-home"></i></strong></a>
+    <ul class="p-0 m-0">
+        <li style="list-style: none">
+            <!-- <button class="btn btn-light"  routerLink='/users'>
+            GET USERS
+          </button> -->
+          <button  class="btn btn-light mx-2" routerLink='/profile' *ngIf="isLoggedIn()">
+            GET PROFILE
+          </button>
+          <button  class="btn btn-warning mx-2" (click)="login()" *ngIf="!isLoggedIn()"  >
+            SIGN IN
+          </button>
+          <button
+            class="btn btn-warning mx-2" routerLink='/' (click)="logout()" *ngIf="isLoggedIn()">
+            SIGN OUT
+          </button>
+        </li>
+      </ul>    
+</nav>
